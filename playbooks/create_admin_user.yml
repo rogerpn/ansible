@@ -1,0 +1,9 @@
+---
+- hosts: LAB
+  gather_facts: yes
+  become: yes
+  become_user: root
+  tasks:
+   - import_role:
+        name: create_admin_user
+...

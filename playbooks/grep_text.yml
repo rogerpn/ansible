@@ -1,0 +1,6 @@
+- hosts: all
+  become: yes
+  tasks:
+  - name: Ansible grep pattern with ignore_errors
+    shell: "grep OPTION /var/log/vociwebapi/err.log"
+    ignore_errors: true

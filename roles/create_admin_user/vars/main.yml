@@ -1,0 +1,8 @@
+---
+# vars file for create_admin_user
+admin:
+  - name: 'mutareadmin'
+    comment: 'Mutare Admin'
+    uid: '2000'
+
+...
