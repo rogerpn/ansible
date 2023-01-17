@@ -1,6 +1,6 @@
 ---
-- name: Show Logs
-  hosts: nc01
+- name: Transcribe a file to all Vocis
+  hosts: Vocis
   tasks:
 
   - name: transcribe a file
