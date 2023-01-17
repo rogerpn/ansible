@@ -1,7 +1,7 @@
 ---
 
 - name: list out files in directory
-  hosts: all
+  hosts: Vocis
   vars:
     directory: $HOME
 
