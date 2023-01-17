@@ -1,0 +1,10 @@
+---
+- name: Remove Errata updates
+  hosts: all
+  tasks:
+    - name: Remove .gz
+      ansible.builtin.file:
+        path: $HOME/nginx_signing.key
+        state: absent
+
+...

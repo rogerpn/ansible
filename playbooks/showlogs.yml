@@ -1,0 +1,17 @@
+---
+- name: Show Logs
+  hosts: all
+  tasks:
+
+  - name: is port 17171 running?
+    command: tail /var/log/vociwebapi/err.log
+    register: tail
+  - debug:
+      msg: "{{ tail.stdout_lines }}"
+
+  - name: is port 17170 running?
+    command: tail /var/log/vociserver/err.log
+    register: tail
+  - debug:
+      msg: "{{ tail.stdout_lines }}"
+...

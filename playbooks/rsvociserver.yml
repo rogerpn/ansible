@@ -1,0 +1,20 @@
+---
+- name: Restart vociserver
+  hosts: nc01
+  become: true
+  tasks:
+
+  - name: restart vociserver
+    ansible.builtin.service:
+      name: vociserver
+      state: restarted
+      enabled: true
+
+  - name: is port 17170 running?
+    command: tail /var/log/vociserver/err.log
+    register: tail
+  - debug:
+      msg: "{{ tail.stdout_lines }}"
+
+   
+...

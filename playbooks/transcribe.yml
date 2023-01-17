@@ -1,0 +1,11 @@
+---
+- name: Show Logs
+  hosts: nc01
+  tasks:
+
+  - name: transcribe a file
+    command: curl -F output=text -F file=@/opt/voci/server/examples/sample7.wav -X POST http://localhost:17171/transcribe
+    register: curl
+  - debug:
+      msg: "{{ curl.stdout_lines }}"
+...

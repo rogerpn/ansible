@@ -1,0 +1,11 @@
+---
+- name: Make Directory
+  hosts: MD
+  tasks:
+
+  - name: Create directory
+    file:
+      path: /tmp/rpms
+      state: directory
+
+...

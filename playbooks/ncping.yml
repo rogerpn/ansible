@@ -1,0 +1,9 @@
+---
+-  name: Get Ping Response From NC
+   hosts: NC
+   tasks:
+   - ping:
+     register: ping
+   - debug: 
+       var: ping
+...

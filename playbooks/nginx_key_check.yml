@@ -1,0 +1,9 @@
+---
+- name: check for nginx pub key
+  hosts: nc04
+  tasks:
+
+  - name: is there a pub key
+    command: rpm -qi gpg-pubkey-7bd9bf62-*
+
+...

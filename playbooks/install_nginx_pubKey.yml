@@ -1,0 +1,11 @@
+---
+- name: install nginx pubkey
+  hosts: nc04
+  tasks:
+
+  - name: is there a pub key
+    ansible.builtin.rpm_key:
+      state: present
+      key: $HOME/nginx_signing.key  
+
+...

@@ -1,0 +1,12 @@
+---
+- name: Extract rpm files
+  hosts: MD
+  tasks:
+
+  - name: extract files to directory
+    ansible.builtin.unarchive:
+      src: DEC16_2022_rpm_updates.tar.gz
+      dest: /tmp/rpms
+
+
+...

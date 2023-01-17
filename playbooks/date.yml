@@ -1,0 +1,10 @@
+---
+- name: check date
+  hosts: all
+  tasks:
+  - name: what is the date
+    command: date
+    register: date
+  - debug:
+      var: date
+...

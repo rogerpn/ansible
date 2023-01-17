@@ -1,0 +1,10 @@
+---
+- name: Copy Errata updates
+  hosts: all
+  tasks:
+    - name: Copy .rpm Updates
+      copy:
+        src: nginx_signing.key
+        dest: $HOME/nginx_signing.key
+
+...

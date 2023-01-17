@@ -1,0 +1,9 @@
+---
+-  name: Get Ping Response From All
+   hosts: all
+   tasks:
+   - ping:
+     register: ping
+   - debug: 
+       var: ping
+...
