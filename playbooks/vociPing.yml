@@ -1,5 +1,5 @@
 ---
--  name: Get Ping Response From NC
+-  name: Get Ping Response From HQ Vocis
    hosts: Vocis
    tasks:
    - ping:
