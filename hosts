@@ -48,17 +48,3 @@ voci3  ansible_host=vociadmin@192.168.0.21
 # leading 0s:
 
 #db-[99:101]-node.example.com
-
-[tekvizion]
-scp-for-tekvizion-01 ansible_host=10.150.35.4 ansible_user=ansib
-scp-for-webex-tekvizion-01 ansible_host=10.150.35.9 ansible_user=ansib
-
-[voci]
-192.168.1.68
-192.168.1.76
-192.168.1.80
-192.168.1.82
-192.168.1.87
-192.168.1.130
-192.168.1.137
-192.168.1.174
