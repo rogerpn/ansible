@@ -1,6 +1,6 @@
 ---
 -  name: Get Ping Response From NC
-   hosts: NC
+   hosts: Vocis
    tasks:
    - ping:
      register: ping

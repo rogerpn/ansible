@@ -1,9 +1,0 @@
----
--  name: Get Ping Response From MD
-   hosts: MD
-   tasks:
-   - ping:
-     register: ping
-   - debug: 
-       var: ping
-...

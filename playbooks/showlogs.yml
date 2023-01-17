@@ -1,6 +1,6 @@
 ---
 - name: Show Logs
-  hosts: all
+  hosts: Vocis
   tasks:
 
   - name: is port 17171 running?

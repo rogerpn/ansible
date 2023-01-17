@@ -1,6 +1,6 @@
 ---
 - name: check date
-  hosts: all
+  hosts: Vocis
   tasks:
   - name: what is the date
     command: date

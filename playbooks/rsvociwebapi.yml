@@ -1,6 +1,6 @@
 ---
 - name: Restart vociwebapi
-  hosts: nc01
+  hosts: Vocis
   become: true
   tasks:
 
